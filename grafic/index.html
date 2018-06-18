@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+   
+   <div class="contanier">
+      <div class="visota">
+          <p >190 <br>170 <br>150 <br>130 <br>110 <br>90 <br> 70 <br>50 <br>30 <br>10 <br></p>
+      </div>
+       <div id="kola"  class="grafic">
+           
+       </div>
+       <div id="indexId" class="index"></div>
+   </div>
+    <h4 style="margin:200px; ">В index.html я создал блок,  а в нем еще один,  задал ему класс,  айди  и стили.  Затем я создал массив , а в нем значения, как указано в условии. Затем создал цикл который создает блоки (20 блоков - длина указанного массива )с классом "stolb " , в стилях указал высоту 400 px,  а для родительского елемента указал свойство overflow:hidden , для того что бы блоки с классом "stolb " Не выходили за границы родительского елемента и создал еще пару свойств для блоков учитывая что их 20 . Затем с помощью цикла я каждому блоку применил стиль "margin-top ". я решил сделать так... я взял высоту блока (200px) отнял от нее значение массива умноженного на 10 (я сделал это для того , что бы видно было разницу в высоте  ) и получился график в котором 20 столбцов (количество елементов в массиве ) и значение каждого елементк массива в виде высоты блока. Фон для блока сделал на фотошопе  </h4 >
+<script>  
+    
+    for(i=0;i<20;i++){
+        eval(sozd())}
+    
+        function sozd(){
+        var znach = [5, 8, 2, 1, 15, 2, 3, 5, 9, 11, 10, 4, 3, 14, 1, 7, 10, 3, 2, 13]
+        var newDiv = document.createElement('div');
+        var indexZnach = document.createElement('p');
+        indexId.appendChild(indexZnach);
+        indexZnach.innerHTML = i;
+        newDiv.style.paddingTop= "10px" ;
+        newDiv.id=" block" + i ;
+        newDiv.className="stolb"
+        indexZnach.className="znachenie";
+        newDiv.style.marginTop= 200 - znach[i]*10 + "px";
+        kola.appendChild(newDiv);
+        if (znach[i]<5){
+        newDiv.style.background="green";
+        }
+        if(znach[i] >10){
+        newDiv.style.background="red";
+        }
+
+        }
+        
+    
+    
+    
+    
+   
+
+//for(i=0;i<20;i++){
+//    function razm(){
+//        alert("jnn");
+//}
+
+
+
+   
+</script>
+</body>
+</html>

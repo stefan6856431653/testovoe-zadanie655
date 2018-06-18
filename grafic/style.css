@@ -1,0 +1,42 @@
+.grafic{
+    margin-top: 100px ;
+    width: 850px;
+    height: 200px;
+    overflow: hidden;
+    border-left: 2px solid #292929;
+    border-bottom: 1px solid #292929;
+    background-image:url(grafic.png);
+    position: relative;
+}
+.stolb{
+    width: 20px;
+    height: 400px;
+    margin-left: 20px;
+    float: left;
+    background: yellow ;
+    position:inherit;
+    
+}
+.index{
+    width: 850px;
+    height: 20px;
+    margin: 0 auto;
+}
+.znachenie{
+    margin-top: 5px;
+    display: inline;
+    float: left;
+    margin-left:28.5px;
+    width: 12px;
+    height: 10px;
+
+}
+
+.visota{
+    width: 30px;
+    height: 200px;
+    margin-left:222px;
+    float: left;
+}
+
+        
